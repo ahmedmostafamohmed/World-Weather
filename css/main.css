@@ -1,0 +1,211 @@
+body{
+    overflow: hidden;
+}
+
+.container{
+    width: 85%;
+}
+nav {
+    background-image: url(../images/wave-lg.svg);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ; 
+}
+.navbar-brand{
+    color: white ;
+    font-size: 23px;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color:#0b0b1b;
+}
+.nav-link{
+   color: white ;
+    border: none;
+    transition: all 1s;
+    font-size: 17px;
+    
+}
+.nav-link:hover{
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
+}
+.navbar-nav .nav-link.active{
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
+}
+.navbar-nav .nav-link.active{
+    color:#0b0b1b;
+    border: 1px solid #0b0b1b;
+}
+
+/* ----------------------------- body Section --------------------------------- */
+.banner{
+    background-image: url("../images/wave1.svg");
+    background-size:cover;
+    background-position: center;
+    padding: 20px 0px 120px 0px;
+}
+
+/* Search form-control */
+.form-control{
+    color:#0581b3;
+    border-color: #0581b3;
+}
+.form-control:focus{
+    background-color: #ffffff;
+    border-color: #0b0b1b;
+    color: #0581b3;
+    box-shadow: none;
+    z-index: 0;
+}
+
+/*  --------------------- Cards  -------------------------- */
+.card-header1-3{
+    background-color: #0581b3;
+    color:#ffffff;
+    border-bottom: 1px solid #ffffff; 
+}
+.card-body1-3 {
+    background-color: #ffffff;
+    /* background-image: url("../images/wave11.svg"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    color:#070711;
+}
+.card-body3{
+    background-color: #ffffff;
+    /* background-image: url("../images/wave3).svg"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    color:#070711;
+}
+.card-title{
+    color:#070711;
+    
+}
+.card-text1{
+    font-size: 6.4285714286rem;
+}
+p{
+    color: #026e99;
+}
+
+.card-header2{
+    background-color: #ffffff;
+    color:#0581b3;
+    border-bottom: none;
+    
+}
+.card-body2 {
+    background-color: #eeeeee;
+    background-image: url("../images/wave2.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center ; 
+    color:#070711;
+}
+.p1-card2-3 , .copyright{
+    color:#070711;
+}
+
+/* ---------------------- footer Section ---------------------- */
+.footer{
+    background-color: #0581b3;
+
+}
+/*  ------ icon-social --------*/
+.icon-social{
+    color: white;
+    font-size: 25px;
+    padding:10px;
+    cursor: pointer;
+}
+.icon-social:hover{
+    color:#070711;
+    background-color: #0581b3;
+    border-color: #0581b3;
+}
+.copyright{
+    color:#ffffff;
+}
+.input-srarch{
+    width: 75%;
+}
+
+.loading{
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #070711;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-loading{
+    color: #0581b3;
+    font-size: x-large;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-bottom: 4px solid #0581b3;
+    border-left: 4px solid transparent;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+@media screen and (max-width:540px) {
+    .input-srarch{
+        width: 100%;
+    }
+    .navbar-brand{
+        color: #0b0b1b ;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .card-body1-3 {
+        background-image: url("../images/wave11.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top center ;
+    }
+    .card-body3{
+        background-image: url("../images/wave3.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: top center ;
+    }
+
+}
